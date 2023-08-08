@@ -70,20 +70,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9198570766207541265, guid: f77d4277ccd48324e82286f0247d937c, type: 3}
   m_PrefabInstance: {fileID: 8708135392238697367}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4109299198374764741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 539974972231326598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d831f1c5a4709ee49b538eb4458170fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  characterRigidBody: {fileID: 1274022879694291867}
 --- !u!95 &6809408694488177253
 Animator:
   serializedVersion: 4
@@ -104,6 +90,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4109299198374764741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539974972231326598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d831f1c5a4709ee49b538eb4458170fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  characterRigidBody: {fileID: 1274022879694291867}
+  characterAnimationController: {fileID: 6809408694488177253}
 --- !u!50 &1274022879694291867 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7599751869950523404, guid: f77d4277ccd48324e82286f0247d937c, type: 3}
