@@ -13,7 +13,7 @@ public class SC_Animation_PlaySound : MonoBehaviour
     public AudioSource[] soundSources; // Creates a list of audio sources you can add to in the inspector
 
 
-    public void playSound(AnimationEvent myEvent) {
+    public void PlaySound(AnimationEvent myEvent) {
 
         AudioSource selectedSource = soundSources[myEvent.intParameter];
         AudioClip selectedClip = myEvent.objectReferenceParameter as AudioClip;
@@ -25,9 +25,10 @@ public class SC_Animation_PlaySound : MonoBehaviour
  
     }
 
-    public void stopSound(int selectedSource)
+    public void StopSound(int selectedSource)
     {
         AudioSource source = soundSources[selectedSource];
         source.Stop();
     }
+
 }

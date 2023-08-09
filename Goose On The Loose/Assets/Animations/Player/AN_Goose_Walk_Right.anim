@@ -79,8 +79,8 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: playSound
-    data: 
+    functionName: PlayFootstepSound
+    data: Sand
     objectReferenceParameter: {fileID: 8300000, guid: 8e793ba977870474d80f6f3c95d2eee5, type: 3}
     floatParameter: 0
     intParameter: 0

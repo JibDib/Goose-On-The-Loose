@@ -105,6 +105,26 @@ MonoBehaviour:
   moveSpeed: 5
   characterRigidBody: {fileID: 1274022879694291867}
   characterAnimationController: {fileID: 6809408694488177253}
+--- !u!114 &4231979865458047015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539974972231326598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49cf44c1485f67347ae1d8eb8e315a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepSoundSource: {fileID: 7296768032752755017}
+  listOfFootstepSounds:
+  - type: Grass
+    audioClips: []
+  - type: Dirt
+    audioClips: []
+  - type: Sand
+    audioClips: []
 --- !u!114 &8416893583346712840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,8 +139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundSources:
   - {fileID: 7296768032752755017}
-  soundEffects:
-  - {fileID: 8300000, guid: 8079750fefc868a4fb765bd570a20ddb, type: 3}
 --- !u!50 &1274022879694291867 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7599751869950523404, guid: f77d4277ccd48324e82286f0247d937c, type: 3}
