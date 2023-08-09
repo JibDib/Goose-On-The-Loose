@@ -3,35 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // This script was built for Scarlet Is The Night In Which We Break and then revamped during the development of A Vacancy That's Hard to Talk About
-// Put it on an object that has an animator, and add every sound that object can make during an animation to the list
-// Now in any of it's animations, call the function using an event, and pass in the list number that corresponds to the sound you want to play (0 is the first item, 1 is the second, and so on)
+// Put it on an object that has an animator, and add every audio source that object uses to make sound
+// Now in any of it's animations, call the function using an event, and pass in an int that corresponds with the list number of the audio source you want to use, and pass in the audio clip you want to play as an object
+// The string and float values are not used for anything.
 
 
 public class SC_Animation_PlaySound : MonoBehaviour
 {
     public AudioSource[] soundSources; // Creates a list of audio sources you can add to in the inspector
-    public AudioClip[] soundEffects;
 
 
-    public void playSound(int sourceNumber, int clipNumber)
-    {
-        AudioSource selectedSource = soundSources[sourceNumber];
-        AudioClip selectedClip = soundEffects[clipNumber];
+    public void playSound(AnimationEvent myEvent) {
+
+        AudioSource selectedSource = soundSources[myEvent.intParameter];
+        AudioClip selectedClip = myEvent.objectReferenceParameter as AudioClip;
+
+
 
         selectedSource.clip = selectedClip;
         selectedSource.Play();
  
     }
 
-   /* public void playSound(int clipNumber) //When you run the function, put in the number of the clip you want to play
+    public void stopSound(int selectedSource)
     {
-        AudioSource clip = soundEffects[clipNumber];
-        clip.Play();
+        AudioSource source = soundSources[selectedSource];
+        source.Stop();
     }
-
-    public void stopSound(int clipNumber)
-    {
-        AudioSource clip = soundEffects[clipNumber];
-        clip.Stop();
-    }*/
 }
