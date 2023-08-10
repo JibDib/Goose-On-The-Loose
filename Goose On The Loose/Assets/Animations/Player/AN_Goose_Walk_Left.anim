@@ -80,7 +80,7 @@ AnimationClip:
   m_Events:
   - time: 0
     functionName: PlayFootstepSound
-    data: Dirt
+    data: Wood
     objectReferenceParameter: {fileID: 8300000, guid: c0e49e3133fe8e44fbf640761b09f88b, type: 3}
     floatParameter: 0
     intParameter: 0

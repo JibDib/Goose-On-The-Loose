@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SC_Player_Footstep_Manager : MonoBehaviour
+public class SC_Footstep_Manager : MonoBehaviour
 {
     
     public AudioSource footstepSoundSource;

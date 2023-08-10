@@ -114,17 +114,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 539974972231326598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49cf44c1485f67347ae1d8eb8e315a47, type: 3}
+  m_Script: {fileID: 11500000, guid: ea63cc107b1ee3d4abb9766f6402b823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   footstepSoundSource: {fileID: 7296768032752755017}
   listOfFootstepSounds:
   - type: Grass
-    audioClips: []
-  - type: Dirt
-    audioClips: []
-  - type: Sand
-    audioClips: []
+    audioClips:
+    - {fileID: 8300000, guid: 8079750fefc868a4fb765bd570a20ddb, type: 3}
+    - {fileID: 8300000, guid: c0e49e3133fe8e44fbf640761b09f88b, type: 3}
+    - {fileID: 8300000, guid: 8e793ba977870474d80f6f3c95d2eee5, type: 3}
+  - type: Wood
+    audioClips:
+    - {fileID: 8300000, guid: 7c1ff9729435d804db3c54177e12a01b, type: 3}
+    - {fileID: 8300000, guid: 0dbd120ec1d250042857afed87ecbfb5, type: 3}
+    - {fileID: 8300000, guid: aee5f2f5d7bd79a4da5b0ca0885fce87, type: 3}
+  - type: Water
+    audioClips:
+    - {fileID: 8300000, guid: f8538fb29f94f6e42aab723203da1660, type: 3}
+    - {fileID: 8300000, guid: e157a623954a67d48b0ff281dda564b3, type: 3}
+    - {fileID: 8300000, guid: 5ed026107811d9e4e9ef98af3ee6fc19, type: 3}
 --- !u!114 &8416893583346712840
 MonoBehaviour:
   m_ObjectHideFlags: 0
