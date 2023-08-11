@@ -79,8 +79,8 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: PlayFootstepSound
-    data: Wood
+    functionName: PlayRandomSound
+    data: Footstep_Water
     objectReferenceParameter: {fileID: 8300000, guid: c0e49e3133fe8e44fbf640761b09f88b, type: 3}
     floatParameter: 0
     intParameter: 0
