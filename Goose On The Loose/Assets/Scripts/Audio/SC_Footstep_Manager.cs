@@ -8,6 +8,7 @@ public class SC_Footstep_Manager : MonoBehaviour
     public AudioSource footstepSoundSource;
     public SC_AudioClip_List[] listOfFootstepSounds;
     private int listNumber = 0;
+    private AudioClip selectedClip;
 
 
     private int GetCorrectType(string type)
@@ -30,12 +31,15 @@ public class SC_Footstep_Manager : MonoBehaviour
     public void PlayFootstepSound(string type)
     {
         GetCorrectType(type);
-        footstepSoundSource.PlayOneShot(listOfFootstepSounds[listNumber].audioClips[Random.Range(0, listOfFootstepSounds[listNumber].audioClips.Length - 1)]);
+        
+        // Pick & play a random clip from the correct list
+        int n = Random.Range(1, listOfFootstepSounds[listNumber].audioClips.Length); //excludes item at index 0
+        selectedClip = listOfFootstepSounds[listNumber].audioClips[n];
+        footstepSoundSource.PlayOneShot(selectedClip);
+        // Move picked sound to index 0 so it's not picked next tiem
+        listOfFootstepSounds[listNumber].audioClips[n] = listOfFootstepSounds[listNumber].audioClips[0];
+        listOfFootstepSounds[listNumber].audioClips[0] = selectedClip;
+
         listNumber = 0;
     }
-    
-    // Check each sublist for their type
-    // Get the list that matches the type
-    // Play a random sound
-    //https://stackoverflow.com/questions/62670596/foreach-statement-cannot-operate-on-variables-of-type-table1-because-table1
 }
