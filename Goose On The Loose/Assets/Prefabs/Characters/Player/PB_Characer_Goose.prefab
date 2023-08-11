@@ -90,6 +90,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2554015958442411273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539974972231326598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3caa03711d342f4d91d18c47c602bc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  honkParticle: {fileID: 3401143114561376387, guid: 3cd30d1f9e72bdf4f9afa212175034fd, type: 3}
 --- !u!114 &4109299198374764741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,18 +166,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundSources:
   - {fileID: 7296768032752755017}
---- !u!114 &2554015958442411273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 539974972231326598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3caa03711d342f4d91d18c47c602bc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1274022879694291867 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7599751869950523404, guid: f77d4277ccd48324e82286f0247d937c, type: 3}
